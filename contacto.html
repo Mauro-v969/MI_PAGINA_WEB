@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | TechVenta S.A. de C.V.</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body bgcolor="#f4f7f6" text="#333">
+
+    <table width="100%" bgcolor="#2c3e50" cellpadding="15">
+        <tr>
+            <td><img src="https://via.placeholder.com/150x40?text=TechVenta" alt="Logo" border="0"></td>
+            <td align="right">
+                <a href="index.html" style="color:white; text-decoration:none;">Inicio</a> | 
+                <a href="laptops.html" style="color:white; text-decoration:none;">Laptops</a> |
+                <a href="mapa_sitio.html" style="color:white; text-decoration:none;">Mapa del Sitio</a>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table width="700" align="center" bgcolor="#FFFFFF" cellpadding="30" style="border: 1px solid #ccc; border-radius: 8px;">
+        <tr>
+            <td>
+                <h1 align="center">Atención Personalizada</h1>
+                <p align="center"><em>"Convertimos tus necesidades tecnológicas en soluciones reales."</em></p>
+                <hr>
+
+                <form action="procesar_contacto.php" method="POST" enctype="application/x-www-form-urlencoded" accept="text/html">
+                    
+                    <table width="100%" border="0" cellpadding="10">
+                        <tr>
+                            <td>
+                                <label for="nombre"><strong>Nombre Completo:</strong></label><br>
+                                <input type="text" id="nombre" name="nombre" size="40" maxlength="50" placeholder="Ej. Juan Pérez" required>
+                            </td>
+                            <td>
+                                <label for="email"><strong>Correo Electrónico:</strong></label><br>
+                                <input type="email" id="email" name="email" size="40" maxlength="60" placeholder="usuario@correo.com" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="interes"><strong>Interés Principal:</strong></label><br>
+                                <select id="interes" name="interes">
+                                    <option value="cotizacion">Cotización de Equipos</option>
+                                    <option value="soporte">Soporte Técnico</option>
+                                    <option value="estudiante">Plan Estudiante (Descuento)</option>
+                                    <option value="queja">Sugerencias</option>
+                                </select>
+                            </td>
+                            <td>
+                                <label><strong>Tipo de Cliente:</strong></label><br>
+                                <input type="radio" name="tipo" value="persona" checked> Estudiante/Particular 
+                                <input type="radio" name="tipo" value="empresa"> Empresa
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="mensaje"><strong>Mensaje o Requerimiento Específico:</strong></label><br>
+                                <textarea id="mensaje" name="mensaje" rows="6" style="width:100%" maxlength="500" placeholder="Escribe aquí los detalles de la laptop o componente que buscas..."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" name="boletin" id="boletin" checked> 
+                                <label for="boletin">Deseo recibir promociones y novedades de TechVenta.</label>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="2">
+                                <br>
+                                <input type="submit" value="ENVIAR SOLICITUD" style="padding: 10px 30px; background-color: #27ae60; color: white; border: none; cursor: pointer;">
+                                <input type="reset" value="LIMPIAR CAMPOS" style="padding: 10px 30px;">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table width="100%" bgcolor="#333" cellpadding="15">
+        <tr align="center">
+            <td>
+                <font color="white">
+                    <small>Ubicación: Av. Tecnológico #123, Ciudad de México | Tel: 55-TECH-VENTA</small><br>
+                    <strong>TechVenta S.A. de C.V. &copy; 2026</strong>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

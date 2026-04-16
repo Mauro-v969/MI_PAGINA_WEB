@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TechVenta S.A. de C.V. | Soluciones Tecnológicas</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body bgcolor="#FFFFFF" text="#2c3e50" leftmargin="0" topmargin="0">
+
+    <table width="100%" border="0" cellpadding="20" cellspacing="0" bgcolor="#f8f9fa">
+        <tr>
+            <td width="250">
+                <img src="https://via.placeholder.com/200x60?text=TechVenta+Logo" alt="Logo TechVenta S.A. de C.V." border="0">
+            </td>
+            <td align="center">
+                <form action="buscar.php" method="GET">
+                    <input type="text" name="search" size="45" maxlength="50" placeholder="¿Qué equipo buscas hoy?">
+                    <input type="submit" value="Buscar">
+                </form>
+            </td>
+            <td align="right">
+                <a href="contacto.html"><button>CONTACTO DIRECTO</button></a>
+            </td>
+        </tr>
+    </table>
+
+    <table width="100%" bgcolor="#2c3e50" cellpadding="12" border="0">
+        <tr align="center">
+            <td><a href="index.html" style="color:white; text-decoration:none;"><strong>INICIO</strong></a></td>
+            <td><a href="laptops.html" style="color:white; text-decoration:none;">LAPTOPS</a></td>
+            <td><a href="desktops.html" style="color:white; text-decoration:none;">DESKTOPS</a></td>
+            <td><a href="componentes.html" style="color:white; text-decoration:none;">COMPONENTES</a></td>
+            <td><a href="#mision" style="color:white; text-decoration:none;">NOSOTROS</a></td>
+            <td><a href="novedades.html" style="color:white; text-decoration:none;">NOVEDADES</a></td>
+        </tr>
+    </table>
+
+    <center>
+        <br>
+        <section>
+            <h1 align="center">DESTACADO DEL MES: POTENCIA UNIVERSITARIA</h1>
+            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1000" alt="Promoción Estudiantes" width="900" height="350" usemap="#promo_map" border="2">
+            <map name="promo_map">
+                <area shape="rect" coords="0,0,900,350" href="laptops.html" alt="Ver Laptops para Estudiantes">
+            </map>
+        </section>
+    </center>
+
+    <table width="95%" align="center" border="0" cellpadding="20">
+        <tr>
+            <td width="25%" valign="top" bgcolor="#ecf0f1" style="border-radius: 10px;">
+                <h3>FILTRAR PRODUCTOS</h3>
+                <form action="filtrar.php" method="POST">
+                    <p><strong>Rango de Precio:</strong></p>
+                    <select name="precio" style="width:100%">
+                        <option value="all">Todos los precios</option>
+                        <option value="estudiante">Menos de $10,000</option>
+                        <option value="pro">$10,000 - $25,000</option>
+                    </select>
+
+                    <p><strong>Rendimiento:</strong></p>
+                    <input type="radio" name="perf" value="basico"> Uso Académico <br>
+                    <input type="radio" name="perf" value="alto"> Profesional/Gaming
+
+                    <p><strong>Marca:</strong></p>
+                    <input type="checkbox" name="m1" value="tech"> TechPro <br>
+                    <input type="checkbox" name="m2" value="eco"> EcoCompute <br>
+                    
+                    <br>
+                    <input type="submit" value="Actualizar Catálogo">
+                </form>
+            </td>
+
+            <td width="75%" valign="top">
+                <h2>CATÁLOGO: EQUIPOS DISPONIBLES</h2>
+                <table border="1" width="100%" cellpadding="15" summary="Catálogo de ventas">
+                    <tr align="center">
+                        <td>
+                            <img src="https://via.placeholder.com/180" alt="Laptop Estudiante"><br>
+                            <h3>Laptop Uni-Student 14"</h3>
+                            <p>Precio: <ins><strong>$8,499.00</strong></ins></p>
+                            <p><small>Stock disponible: 15 unidades</small></p>
+                            <a href="detalles_estudiante.html"><button>VER FICHA TÉCNICA</button></a>
+                        </td>
+                        <td>
+                            <img src="https://via.placeholder.com/180" alt="Desktop Pro"><br>
+                            <h3>Workstation Pro-Venta</h3>
+                            <p>Precio: $18,900.00</p>
+                            <p><del>$21,000.00</del></p>
+                            <a href="detalles_pro.html"><button>VER FICHA TÉCNICA</button></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <table width="80%" align="center" id="mision" cellpadding="20">
+        <tr>
+            <td align="center">
+                <h2>IDENTIDAD ORGANIZACIONAL</h2>
+                <p><strong>Misión:</strong> <cite>Proporcionar soluciones tecnológicas integrales a través de la venta de equipos de cómputo de alta calidad...</cite></p>
+                <p><strong>Visión:</strong> <em>Consolidarnos como la plataforma de comercio electrónico líder en el sector tecnológico...</em></p>
+            </td>
+        </tr>
+    </table>
+
+    <table width="100%" bgcolor="#2c3e50" style="color:white;" cellpadding="30">
+        <tr>
+            <td width="33%">
+                <strong>SOPORTE TECHVENTA</strong><br>
+                <ul>
+                    <li><a href="mailto:ventas@techventa.com.mx" style="color:#bdc3c7;">Enviar Correo a Ventas</a></li>
+                    <li><a href="ftp://soporte.techventa.com/drivers" style="color:#bdc3c7;">Descarga de Controladores (FTP)</a></li>
+                </ul>
+            </td>
+            <td width="33%" align="center">
+                <a href="mapa_sitio.html" style="color:white; border: 1px solid white; padding: 10px;">MAPA DEL SITIO</a>
+                <p><small>&copy; 2026 TechVenta S.A. de C.V. <br> Basado en Manual Estándares CONALEP</small></p>
+            </td>
+            <td width="33%" align="right">
+                <strong>REDES SOCIALES</strong><br>
+                <p>Síguenos para novedades constantes.</p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
