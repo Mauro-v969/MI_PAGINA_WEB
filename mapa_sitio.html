@@ -1,44 +1,114 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Mapa del Sitio | TechVenta</title></head>
-<body bgcolor="#f4f7f6" style="font-family: Arial; margin:0;">
-    <table width="100%" bgcolor="#2c3e50" cellpadding="20">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa del Sitio | TechVenta S.A. de C.V.</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f7f6; }
+        .btn-nav {
+            display: inline-block;
+            width: 85%;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #2c3e50;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
+        .btn-nav:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateX(5px);
+        }
+        ul { list-style: none; padding: 0; }
+        .container-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-top: 30px;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <table width="100%" bgcolor="#2c3e50" cellpadding="20" border="0">
         <tr>
-            <td><font color="white" size="5"><strong>Mapa del Sitio</strong> | TechVenta S.A. de C.V.</font></td>
-            <td align="right"><a href="index.html" style="color:white; text-decoration:none; border:1px solid white; padding:10px;">VOLVER AL INICIO</a></td>
+            <td width="300">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td bgcolor="#0056b3" style="padding: 8px 15px; border-radius: 5px;">
+                            <font color="#FFFFFF" size="5"><strong>T</strong></font>
+                        </td>
+                        <td style="padding-left: 12px;">
+                            <font color="#FFFFFF" size="4"><strong>Tech</strong>Venta</font><br>
+                            <font color="#999999" size="1">SOLUCIONES TECNOLÓGICAS</font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td align="right">
+                <a href="index.html" style="color:white; text-decoration:none; border:1px solid white; padding:10px; font-weight: bold; border-radius: 4px;">
+                    VOLVER AL INICIO
+                </a>
+            </td>
         </tr>
     </table>
-    <table width="90%" align="center" bgcolor="white" cellpadding="40" style="margin-top:20px; border-radius:15px;">
+
+    <table width="90%" align="center" class="container-card" border="0">
+        <tr>
+            <td colspan="3" align="center">
+                <h1 style="color: #2c3e50;">MAPA ESTRUCTURAL DEL SITIO</h1>
+                <p>Navega rápidamente por todas nuestras secciones operativas</p>
+                <hr width="100" style="border: 2px solid #3498db;">
+                <br>
+            </td>
+        </tr>
         <tr>
             <td width="33%" valign="top">
-                <h3 style="color:#3498db;">🛒 Catálogo</h3>
+                <h3 style="color:#3498db; border-bottom: 2px solid #eee; padding-bottom: 10px;">🛒 Catálogo</h3>
                 <ul>
-                    <li><a href="laptops.html">Laptops</a></li>
-                    <li><a href="desktops.html">Desktops</a></li>
-                    <li><a href="componentes.html">Componentes</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="ofertas.html">Ofertas Especiales</a></li>
-                    <li><a href="carrito.html">Carrito de Compras</a></li>
+                    <li><a href="laptops.html" class="btn-nav">Laptops Portátiles</a></li>
+                    <li><a href="desktops.html" class="btn-nav">Desktops de Escritorio</a></li>
+                    <li><a href="ofertas.html" class="btn-nav">🔥 Zona de Ofertas</a></li>
+                    <li><a href="carrito.html" class="btn-nav">🛒 Mi Carrito</a></li>
                 </ul>
             </td>
+
             <td width="33%" valign="top">
-                <h3 style="color:#3498db;">🏢 Empresa</h3>
+                <h3 style="color:#3498db; border-bottom: 2px solid #eee; padding-bottom: 10px;">🏢 Empresa</h3>
                 <ul>
-                    <li><a href="servicios.html">Servicios Técnicos</a></li>
-                    <li><a href="sucursales.html">Sucursales</a></li>
-                    <li><a href="blog.html">Blog Tech</a></li>
-                    <li><a href="bolsa-trabajo.html">Bolsa de Trabajo</a></li>
+                    <li><a href="servicios.html" class="btn-nav">Servicios Técnicos</a></li>
+                    <li><a href="sucursales.html" class="btn-nav">Nuestras Tiendas</a></li>
+                    <li><a href="blog.html" class="btn-nav">Blog Tecnológico</a></li>
+                    <li><a href="bolsa-trabajo.html" class="btn-nav">Trabaja con Nosotros</a></li>
                 </ul>
             </td>
+
             <td width="33%" valign="top">
-                <h3 style="color:#3498db;">🛠 Soporte</h3>
+                <h3 style="color:#3498db; border-bottom: 2px solid #eee; padding-bottom: 10px;">🛠 Soporte y Legal</h3>
                 <ul>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="politicas.html">Garantías y Privacidad</a></li>
+                    <li><a href="contacto.html" class="btn-nav">Contacto Directo</a></li>
+                    <li><a href="preguntas-frecuentes.html" class="btn-nav">Preguntas (FAQ)</a></li>
+                    <li><a href="politicas.html" class="btn-nav">Políticas Legales</a></li>
                 </ul>
             </td>
         </tr>
     </table>
+
+    <br><br>
+    <table width="100%" bgcolor="#1a1a1a" cellpadding="20">
+        <tr align="center">
+            <td>
+                <font color="#bdc3c7" size="2">
+                    <strong>TechVenta S.A. de C.V. &copy; 2026</strong> | Panel de Navegación del Sitio
+                </font>
+            </td>
+        </tr>
+    </table>
+
 </body>
 </html>
